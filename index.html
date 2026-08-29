@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ritesh Jadoun | Software Engineer & AI Enthusiast</title>
+<meta name="description" content="Portfolio of Ritesh Jadoun — Computer Science undergraduate, software engineer and AI enthusiast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">RJ<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#journey" class="nav-link" data-section="journey">Journey</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting fade-in">Hello, I'm</p>
+      <h1 class="hero-name fade-in">Ritesh Jadoun</h1>
+      <h2 class="hero-role fade-in">
+        <span id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc fade-in">
+        Computer Science undergraduate building AI-driven applications and solving
+        problems with strong analytical rigor — from real-time emotion recognition
+        to genetic-algorithm optimization.
+      </p>
+      <div class="hero-actions fade-in">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="Ritesh_Jadoun_Resume.pdf" class="btn btn-outline" download>Download Résumé</a>
+      </div>
+      <div class="hero-socials fade-in">
+        <a href="https://github.com/ritesh-jd" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.535-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.655 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.11.81 2.25 0 1.635-.015 2.945-.015 3.35 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ritesh-singh-jadoun-6583a8365/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://leetcode.com/u/riteshjd/" target="_blank" rel="noopener" aria-label="LeetCode">
+          <svg viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955-.538-.54-1.414-.54-1.955-.003l-2.396 2.392a3.023 3.023 0 0 1-4.276.04l-.038-.038-4.276-4.193c-.652-.64-.972-1.469-.973-2.294a3.017 3.017 0 0 1 .87-2.115l3.854-4.126 3.673-3.038a1.374 1.374 0 0 0 .04-1.945A1.374 1.374 0 0 0 13.483 0z"/><path d="M20.677 15.408a1.374 1.374 0 0 0-1.374 1.374 2.858 2.858 0 0 1-2.858 2.858H9.9a1.374 1.374 0 1 0 0 2.748h6.545a5.606 5.606 0 0 0 5.606-5.606 1.374 1.374 0 0 0-1.374-1.374z"/></svg>
+        </a>
+        <a href="mailto:riteshjd75@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-tag reveal">01 — Get to know me</p>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Computer Science undergraduate at the <strong>Greater Noida Institute of Technology</strong>
+            (2023 – 2027), driven by a strong interest in software engineering and applied AI.
+            I enjoy turning research ideas into working systems — whether that's detecting emotion
+            from a live camera feed or squeezing more efficiency out of an image compressor using
+            evolutionary algorithms.
+          </p>
+          <p>
+            Beyond code, I'm an active competitive programmer with 60+ problems solved on LeetCode,
+            a published researcher, and an open-source contributor. I was also shortlisted among the
+            top 50 teams (out of 400) in my college's internal Smart India Hackathon selection.
+          </p>
+          <p>
+            Off-screen, I compete in dance and mentor peers through choreography — something that
+            taught me discipline, teamwork, and how to iterate under pressure, skills that translate
+            directly into how I approach engineering problems.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="60">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">LeetCode Problems</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Featured Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="50">0</span>
+              <span class="stat-label">Top SIH Teams (of 400)</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-glow"></div>
+          <ul class="info-list">
+            <li><span>Name</span><strong>Ritesh Jadoun</strong></li>
+            <li><span>Focus</span><strong>Software Engineering &amp; AI</strong></li>
+            <li><span>Education</span><strong>B.Tech CSE, GNIOT</strong></li>
+            <li><span>Location</span><strong>India</strong></li>
+            <li><span>Email</span><strong>riteshjd75@gmail.com</strong></li>
+            <li><span>Phone</span><strong>+91 9528687841</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">02 — What I work with</p>
+      <h2 class="section-title reveal">Skills &amp; Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Python</span><span>C++</span><span>SQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="tags">
+            <span>Flask</span><span>NumPy</span><span>Pandas</span><span>TensorFlow</span><span>STL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Databases</h3>
+          <div class="tags"><span>MySQL</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="tags">
+            <span>Git</span><span>GitHub</span><span>Linux / Bash</span><span>AWS</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Core Concepts</h3>
+          <div class="tags">
+            <span>Data Structures &amp; Algorithms</span><span>OOP</span><span>Generative AI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proficiency reveal">
+        <h3>Proficiency</h3>
+        <div class="bars">
+          <div class="bar-item">
+            <div class="bar-head"><span>Python</span><span>90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>C++ / DSA</span><span>85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>SQL / MySQL</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>Machine Learning / AI</span><span>78%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>Git &amp; Linux</span><span>80%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-tag reveal">03 — Things I've built</p>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-media">🎵🙂</div>
+          <div class="project-body">
+            <h3>Emotion-Aware Music Player</h3>
+            <p>
+              AI-based music recommendation system that reads real-time facial emotion
+              via webcam and suggests personalized tracks that match the detected mood.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>OpenCV</span><span>DeepFace</span><span>AI</span>
+            </div>
+            <ul class="project-points">
+              <li>Real-time facial emotion detection pipeline</li>
+              <li>Emotion recognition using OpenCV &amp; DeepFace</li>
+              <li>Personalized recommendation engine mapped to mood</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/ritesh-jd/PROJECT" target="_blank" rel="noopener">View Code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">🧬🖼️</div>
+          <div class="project-body">
+            <h3>Image Compression Using Genetic Algorithm</h3>
+            <p>
+              Image compression system built around genetic-algorithm optimization —
+              selection, crossover, mutation and fitness evaluation — to shrink file
+              size while preserving visual quality. Also published as a research paper.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Genetic Algorithms</span><span>Optimization</span>
+            </div>
+            <ul class="project-points">
+              <li>Selection, crossover &amp; mutation strategies</li>
+              <li>Custom fitness evaluation for compression quality</li>
+              <li>Improved compression efficiency vs. baseline</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/ritesh-jd/Image_Compression" target="_blank" rel="noopener">View Code →</a>
+              <a href="https://drive.google.com/file/d/1fW-q7q7sGrqsAjI3T406SFekb0wlVN9M/view?usp=sharing" target="_blank" rel="noopener">Read Paper →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY: education + certs + achievements -->
+  <section id="journey" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">04 — How I got here</p>
+      <h2 class="section-title reveal">Education, Certifications &amp; Achievements</h2>
+
+      <div class="journey-grid">
+        <div class="journey-col reveal">
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023 – 2027</span>
+                <h4>B.Tech, Computer Science &amp; Engineering</h4>
+                <p>Greater Noida Institute of Technology</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2021 – 2022</span>
+                <h4>Intermediate</h4>
+                <p>Kapil Muni Children's Academy</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2019 – 2020</span>
+                <h4>Secondary</h4>
+                <p>Kapil Muni Children's Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-col reveal">
+          <h3>Certifications</h3>
+          <div class="cert-list">
+            <a class="cert-item" href="https://verify.eicta.digitalcredentials.in/1bb4ed3a-a55b-428b-acac-764f6b1146be" target="_blank" rel="noopener">
+              <span class="cert-icon">📜</span>
+              <div>
+                <h4>C Programming</h4>
+                <p>E&amp;ICT Academy, IIT Kanpur — Verify ↗</p>
+              </div>
+            </a>
+            <a class="cert-item" href="https://verify.eicta.digitalcredentials.in/f6f3fdd9-db58-40c4-8b19-c5fe36ccc49d" target="_blank" rel="noopener">
+              <span class="cert-icon">📜</span>
+              <div>
+                <h4>OOP with C++</h4>
+                <p>E&amp;ICT Academy, IIT Kanpur — Verify ↗</p>
+              </div>
+            </a>
+          </div>
+
+          <h3 class="mt">Achievements</h3>
+          <ul class="achieve-list">
+            <li>🏆 Published research paper: <a href="https://drive.google.com/file/d/1fW-q7q7sGrqsAjI3T406SFekb0wlVN9M/view?usp=sharing" target="_blank" rel="noopener">"Image Compression Using Genetic Algorithm"</a></li>
+            <li>🚀 Smart India Hackathon — Top 50 of 400 teams (college-level internal selection)</li>
+            <li>💻 <a href="https://leetcode.com/u/riteshjd/" target="_blank" rel="noopener">60+ problems solved on LeetCode</a></li>
+            <li>🌐 Open-source contributor — improved test cases &amp; refined code through community review</li>
+            <li>💃 Multiple dance competition wins; mentors peers through choreography</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section-tag reveal">05 — Let's talk</p>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="contact-lede reveal">
+        Open to internships, collaborations, and interesting problems. Reach out — I usually reply fast.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-item" href="mailto:riteshjd75@gmail.com">
+            <span class="contact-icon">✉️</span>
+            <div><span>Email</span><strong>riteshjd75@gmail.com</strong></div>
+          </a>
+          <a class="contact-item" href="tel:+919528687841">
+            <span class="contact-icon">📞</span>
+            <div><span>Phone</span><strong>+91 95286 87841</strong></div>
+          </a>
+          <a class="contact-item" href="https://github.com/ritesh-jd" target="_blank" rel="noopener">
+            <span class="contact-icon">🐙</span>
+            <div><span>GitHub</span><strong>github.com/ritesh-jd</strong></div>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/ritesh-singh-jadoun-6583a8365/" target="_blank" rel="noopener">
+            <span class="contact-icon">🔗</span>
+            <div><span>LinkedIn</span><strong>ritesh-singh-jadoun</strong></div>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New message from portfolio site">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Ritesh Jadoun. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
