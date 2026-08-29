@@ -137,8 +137,7 @@ contactForm.addEventListener('submit', async (e) => {
     const result = await res.json();
 
     if (result.success) {
-      formNote.textContent = "Message sent — I'll get back to you soon!";
-      contactForm.reset();
+      window.location.href = 'thank-you.html';
     } else {
       formNote.textContent = 'Something went wrong. Please email riteshjd75@gmail.com directly.';
     }
