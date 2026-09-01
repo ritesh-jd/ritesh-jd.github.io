@@ -47,7 +47,7 @@ backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 's
 // Typing effect
 const roles = [
   'Software Engineer',
-  'AI / ML Enthusiast',
+  'Devops/SRE',
   'Competitive Programmer',
   'Open Source Contributor',
 ];
